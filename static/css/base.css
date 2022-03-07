@@ -1,0 +1,466 @@
+
+/* BASIC PAGE CUSTOMIZE */
+::-webkit-scrollbar {
+	width: 9px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: #8b8b8b;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #202020;
+	border-radius: 8px;
+}
+
+}
+html {
+	scroll-behavior: smooth;
+}
+
+.page-container {
+	position: relative;
+	min-height: 50vh;
+}
+
+.image1
+{
+	max-width: 600px;
+	max-height: 400px;
+}
+
+.header-image {
+	max-height: 85px;
+	width: 175px;
+} 
+
+.header-country {
+	width: 32px;
+	height: 16px;
+	margin: 0 auto;
+}
+
+.header-container {
+	width: 95px;
+	height: 6.5rem;
+	padding-top: 30px;
+	text-align: center;
+	background-color: #202020;
+}
+
+@media (max-width: 992px) {
+	.header-container {
+		width: 100%;
+	}
+}
+/* FOOTER */
+
+.footer_image
+{
+	height: 100px;
+	width: 200px;
+}
+
+.footer {
+	position: relative;
+	color: white;
+	background-color:#202020;
+	display: flex;
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+}
+
+.footer-column {
+	margin: 0 auto;
+	width: 33.333%;
+	color: lightgray;
+}
+
+@media (max-width: 992px) {
+	.footer-column {
+		width: 100%;
+		padding: 20px;
+	}
+}
+
+.footer_section {
+	padding: 75px 0;
+	width: 100%;
+}
+
+.about_us_footer {
+	max-width: 200px;
+	max-height: 50px;
+}
+
+/* HEADER AND PAGE CUSTOMIZATION */
+
+.nav_color {
+	background-color: black; 
+	color: white;
+}
+
+.navbar-custom {
+	background-color:#202020;
+	height: 6.5rem;
+}
+
+.nav-item:hover {
+	color: gray;
+}
+
+.navbar-buttons {
+	background-color:#202020;
+	color: white;
+	height: 6.5rem;
+	width: 95px;
+	text-align: center;
+	padding-top: 38px;
+	transition: 0.2s ease-in;
+}
+
+.navbar-buttons:hover {
+	background-color: white;
+	color: black;
+}
+
+@media (max-width: 992px) {
+	.navbar-buttons {
+		width: 100%;
+	}
+
+	.navbar {
+		padding: 0;
+	}
+}
+
+body {
+	background-color: gray;
+}
+
+
+.container {
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+@media (min-width: 1200px)
+{
+	.container {
+		width: 1170px;
+	}
+}
+
+@media (min-width: 992px )
+{
+	.container {
+		width: 970px;
+	}
+}
+
+@media (min-width: 720px; )
+{
+	.container {
+		width: 560px;
+	}
+}
+
+/* HOME CUSTOMISATION */
+
+.home-container {
+	width: 100%;
+	text-align: center;
+	display: inline-flex;
+}
+
+.home-column {
+	margin: 0 auto;
+	padding: 14px;
+	width: 30%;
+	height: 120px;
+	text-align: center;
+	background-color: #202020;
+	color: lightgray;
+	transition: 0.2s ease-in;
+}
+
+.home-column:hover {
+	background-color: gray;
+	color: #202020;
+	box-shadow: inset 0 0 0 5px #202020;
+	border-radius: 20px;
+}
+
+@media (max-width: 992px) {
+	.home-column {
+		width: 100%;
+	}
+
+	.home-container {
+		display: block;
+	}
+}
+
+.home-light1 {
+	display: block;
+	padding: 200px 0 0 0;
+}
+
+.home-light2 {
+	display: block;
+	padding: 200px 0 0 0;
+}
+
+@media (max-width: 992px) {
+	.home-light1 {
+		padding: 150px 0 0 0;
+	}
+
+	.home-light2 {
+		padding: 0;
+	}
+}
+ 
+@media (max-width: 992px) {
+	.home-light {
+		padding: 150px 0 0 0;
+	}
+}
+
+.slideshow {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.slide-photo {
+	height: 1000px;
+	width: 100%;
+	border-bottom: 2px solid #202020;
+}
+
+@media (max-width: 992px) {
+	.slide-photo {
+		height: 500px;
+	}
+}
+
+.home-border {
+	border-right: 1px solid black;
+}
+
+@media (max-width: 992px) {
+	.home-border {
+		border-right: 0px;
+	}
+}
+
+/* TOOLS FOR SPACING AND ALIGNING */
+
+.light {
+	display: block;
+	padding: 75px 0 0 0;
+}
+
+.row {
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+.column {
+ 	min-height: 1px;
+ 	text-align: center;
+	float: left;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+@media (min-width: 992px)
+{
+	.column {
+		width: 33.33%;
+	}
+}
+
+@media (max-width: 992px)
+{
+	.column {
+		margin: 10px;
+	}
+}
+
+.home_image {
+	width: 100%;
+	height: 250px;
+}
+@media (min-width: 992px)
+{	
+	.home_image {
+		width: 80%;
+		height: 800px;
+	}
+}
+
+.image_container {
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.fade-in {
+	animation: fadeIn ease-in 1.5s;
+	-webkit-animation: fadeIn ease-in 1.5s;
+	-moz-animation: fadeIn ease-in 1.5s;
+	-o-animation: fadeIn ease-in 1.5s;
+	-ms-animation: fadeIn ease-in 1.5s;
+}
+@keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+body {
+	background-color: gray;
+}
+
+div {
+  display: block;
+}
+
+.photo {
+  max-height: 35%;
+  width: 35%;
+}
+
+/* SUBMIT FORM */
+
+.box{ 
+	width: 65%;
+	padding:20px;
+	background-color:#202020;
+	border:2px solid #333;
+	margin: 0 auto;
+	border-radius: 20px;
+	height: 800px;
+}
+
+.form-group {
+	color: lightgray;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+@media (max-width: 992px) {
+	.box {
+		width: 100%;
+		height: 500px;
+		padding: 10px;
+	}
+
+	.form-group {
+		padding-bottom: 5px;
+	}
+}
+
+.form-control {
+	background-color: lightgray;
+	margin: 0 auto;
+	resize: vertical;
+	width: 85%;
+}
+
+.form-control-message {
+	background-color: lightgray;
+	margin: 0 auto;
+	resize: vertical;
+	width: 85%;
+	height: 300px;
+}
+
+@media (max-width: 992px) {
+	.form-control-message {
+		height: 80px;
+	}
+}
+
+.submit_button {
+	background-color: #808080;
+	color: lightgray;
+	border : 1px gray;
+	height: 35px;
+	width: 105px;
+	font-size: 18px;
+	border-radius: 2px;
+	margin-bottom: 2px;
+	transition: 0.3s;
+}
+
+.submit_button:hover {
+  background-color: black;
+}
+
+.contact-light {
+	display: block;
+	padding: 200px 0 0 0;
+}
+
+
+/* GALLERY */
+
+.gallery-column {
+  flex: 25%;
+  max-width: 25%;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.gallery-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery-column img {
+	margin-top: 4px;
+	margin-bottom: 4px;
+	vertical-align: middle;
+	width: 99%;
+}
+
+@media screen and (max-width: 800px) {
+	.gallery-column {
+		flex: 50%;
+		max-width: 50%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.gallery-column {
+		flex: 100%;
+		max-width: 100%;
+	}
+}

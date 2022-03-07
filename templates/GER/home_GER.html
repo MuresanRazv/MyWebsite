@@ -1,0 +1,91 @@
+{%extends 'GER/base_GER.html' %}
+{% block title %} Home Page {% endblock %}
+{% block content %}
+<script>
+	var i = 0;
+	var images = [];
+	var time = 3000;
+
+
+	// Image list
+
+	images[0] = "{{ url_for('static',filename='images/tir1.jpg')}}"
+	images[1] = "{{ url_for('static',filename='images/tir2.jpg')}}"
+	images[2] = "{{ url_for('static',filename='images/tir3.jpg')}}"
+
+
+	function changeImg() {
+		document.slide.src = images[i];
+		if (i < images.length - 1) {
+			i++;
+		} else {
+			i = 0;
+		}
+
+		setTimeout("changeImg()", time);
+	}
+
+	window.onload = changeImg;
+
+</script>
+
+<div class="slideshow">
+	<img name="slide" class="slide-photo">
+</div>
+<section class="home-light1">
+	<div class="container fade-in">
+		<div class="row">
+			<div class="column home-border">
+				<svg class="bi bi-info-circle-fill" width="5em" height="5em" viewBox="0 0 16 16" fill="black" xmlns="http://www.w3.org/2000/svg">
+		  		<path fill-rule="evenodd" d="M8 16A8 8 0 108 0a8 8 0 000 16zm.93-9.412l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM8 5.5a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"/>
+				</svg>
+				<h4> Über uns </h4>
+				<p> Wir sind ein ehrgeiziges Transportunternehmen in Toplita, Harghita mit großem Potenzial und sehr guter Ausbildung! </p>
+			</div>
+			<div class="column home-border">
+				<svg class="bi bi-heart" width="5em" height="5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+		  		<path fill-rule="evenodd" d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 01.176-.17C12.72-3.042 23.333 4.867 8 15z" clip-rule="evenodd"/>
+				</svg>
+				<h4> Vertrauen und Ausdauer </h4>
+				<p> Mit über 10 Jahren Erfahrung auf diesem Gebiet können wir Ihnen versichern, dass die Ware pünktlich und sicher ankommt! </p>
+			</div>
+			<div class="column">
+			 	<svg class="bi bi-gear-fill" width="5em" height="5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+		  		<path fill-rule="evenodd" d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 01-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 01.872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 012.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 012.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 01.872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 01-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 01-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 100-5.86 2.929 2.929 0 000 5.858z" clip-rule="evenodd"/>
+				</svg>
+				<h4> Ausrüstung und Besatzung </h4>
+				<p> Wir haben eine sehr gut ausgebildete Crew auf diesem Gebiet und ein Arsenal von 2 LKWs mit einem Kühlanhänger. </p>
+			</div>
+		</div>
+	</div>
+</section>
+<section class='home-light1'>
+	<div class='home-container'>
+		<div class='home-column'>
+			<h3> Qualität! </h3>	
+			<p> Wir leben unsere Mission, die Erwartungen unserer Kunden durch außergewöhnlichen Service zu übertreffen.</p>
+		</div>
+
+		<div class='home-column'>
+			<h3> Professionalität! </h3>	
+			<p> Wir haben unser Geschäft auf aufrichtigen und für beide Seiten vorteilhaften Beziehungen aufgebaut.</p>
+		</div>
+	</div>
+</section>
+<section class='home-light2'>
+	<div class='home-container'>
+		<div class='home-column'>
+			<h3> Vertrauen! </h3>	
+			<p> Wir setzen uns für Ihren Erfolg ein. </p>
+		</div>
+	</div>
+</section>
+
+<section class="home-light1">
+	<div class="image_container fade-in">
+		<image src="{{ url_for('static',filename='images/logo-quiksilver.png')}}" class="home_image">
+	</div>
+</section>
+
+
+{% endblock %}

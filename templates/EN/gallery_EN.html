@@ -1,0 +1,30 @@
+{% extends 'EN/base_EN.html'%}
+{% block title %} Gallery {% endblock %}
+{% block content %}
+ 
+<div class = 'gallery-row'>
+  <div class="gallery-column">
+    <image src="{{ url_for('static',filename='images/tir1.jpg')}}">
+    <image src="{{ url_for('static',filename='images/tir2.jpg')}}">
+    <image src="{{ url_for('static',filename='images/tir3.jpg')}}">
+  </div>
+  <div class='gallery-column'>
+    <image src="{{ url_for('static',filename='images/tir4.jpg')}}">
+    <image src="{{ url_for('static',filename='images/tir5.jpg')}}">
+    <image src="{{ url_for('static',filename='images/tir6.jpg')}}">
+  </div>
+  <div class ='gallery-column'>
+    <image src="{{ url_for('static',filename='images/tir7.jpg')}}">
+    <image src="{{ url_for('static',filename='images/tir3.jpg')}}">
+    <image src="{{ url_for('static',filename='images/tir2.jpg')}}">
+  </div>
+  <div class="gallery-column">
+    <image src="{{ url_for('static',filename='images/tir1.jpg')}}">
+    <image src="{{ url_for('static',filename='images/tir6.jpg')}}">
+    <image src="{{ url_for('static',filename='images/tir4.jpg')}}">
+  </div>
+</div>
+
+
+
+{% endblock %}
